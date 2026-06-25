@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu</title>
+    <style>
+        body{
+            background: linear-gradient(135deg, #70287f, #4a1d64);  
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            background-color: white;
+            color: black;
+        }
+        ul li{
+            display: inline-block;
+            padding: 20px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .nav-layout{
+            margin: 2cm 10px;
+        }
+
+        .dropdown-menu{display: none;}
+       ul li:hover .dropdown-menu{
+            display: block;
+            position: absolute;
+            margin-left: -45px;
+            margin-top: 22px;
+        }
+        .dropdown-menu li{
+            display: block;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #dadada;
+        }
+
+
+    </style>
+</head>
+<body>
+   <nav class="nav-layout">
+    <ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+         <li>
+            <a href="#">Services</a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li>
+                         <a href="#">Design</a>
+                    </li>
+                    <li>
+                        <a href="#">Development</a>
+                    </li>
+                    <li>
+                        <a href="#">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="#">Content Strategy</a>
+                    </li>
+                    <li>
+                        <a href="#">Training</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+         <li>
+            <a href="#">Portfolio</a>
+        </li>
+         <li>
+            <a href="#">About</a>
+        </li>
+    </ul>
+
+   </nav>
+    
+</body>
+</html>
